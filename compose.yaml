@@ -4,5 +4,5 @@ services:
         image: bot:latest
         environment:
             - BOT_TOKEN=${BOT_TOKEN}
-            - WEP_APP_URL=${WEP_APP_URL}
+            - WEB_APP_URL=${WEB_APP_URL}
         restart: unless-stopped
