@@ -1,8 +1,8 @@
 services:
     bot:
-        build:
-            context: bot
+        build: .
         image: bot:latest
         environment:
             - BOT_TOKEN=${BOT_TOKEN}
+            - WEB_APP_URL=${WEB_APP_URL}
         restart: unless-stopped

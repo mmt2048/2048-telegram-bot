@@ -16,7 +16,7 @@ from aiogram.types import (
 )
 
 TOKEN = getenv("BOT_TOKEN")
-WEP_APP_URL = getenv("WEP_APP_URL")
+WEB_APP_URL = getenv("WEB_APP_URL")
 
 dp = Dispatcher()
 
@@ -31,7 +31,7 @@ async def command_start_handler(message: Message) -> None:
 Поиграем?
 """
 
-    web_app = WebAppInfo(url=WEP_APP_URL)
+    web_app = WebAppInfo(url=WEB_APP_URL)
 
     keyboard = InlineKeyboardMarkup(
         inline_keyboard=[
